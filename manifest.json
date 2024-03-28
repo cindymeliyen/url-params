@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "My URL Analyzer",
+  "version": "1.0",
+  "description": "Analyzes the current URL and displays its parameters",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
